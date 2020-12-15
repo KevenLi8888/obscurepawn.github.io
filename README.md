@@ -1,2 +1,3 @@
-# obscurepawn.github.io
+# FOR INTERNAL USE ONLY!!!
+# DO NOT DISTRIBUTE!!!
 
