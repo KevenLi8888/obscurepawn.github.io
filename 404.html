@@ -1,629 +1,1288 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>404</title><style>
-    /* webkit printing magic: print all background colors */
+<!doctype html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title></title>
+    <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext'
+          rel='stylesheet' type='text/css'/>
+    <style type='text/css'>html {
+        overflow-x: initial !important;
+    }
+
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --select-text-bg-color: #B5D6FC;
+        --select-text-font-color: auto;
+        --monospace: "Lucida Console", Consolas, "Courier", monospace;
+        --title-bar-height: 20px;
+    }
+
+    .mac-os-11 {
+        --title-bar-height: 28px;
+    }
+
     html {
-        -webkit-print-color-adjust: exact;
-    }
-    * {
-        box-sizing: border-box;
-        -webkit-print-color-adjust: exact;
-    }
-
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    @media only screen {
-        body {
-            margin: 2em auto;
-            max-width: 900px;
-            color: rgb(55, 53, 47);
-        }
+        font-size: 14px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
 
     body {
-        line-height: 1.5;
-        white-space: pre-wrap;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 0.96rem;
+        line-height: 1.15;
+        overflow-x: hidden;
+        background-image: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+        background-clip: inherit;
+        background-color: inherit;
+        tab-size: 4;
+        background-position: inherit inherit;
+        background-repeat: inherit inherit;
     }
 
-    a,
-    a.visited {
-        color: inherit;
-        text-decoration: underline;
+    iframe {
+        margin: auto;
     }
 
-    .pdf-relative-link-path {
-        font-size: 80%;
-        color: #444;
-    }
-
-    h1,
-    h2,
-    h3 {
-        letter-spacing: -0.01em;
-        line-height: 1.2;
-        font-weight: 600;
-        margin-bottom: 0;
-    }
-
-    .page-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 0.75em;
-    }
-
-    h1 {
-        font-size: 1.875rem;
-        margin-top: 1.875rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.25rem;
-        margin-top: 1.25rem;
-    }
-
-    .source {
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        padding: 1.5em;
+    a.url {
         word-break: break-all;
     }
 
-    .callout {
-        border-radius: 3px;
-        padding: 1rem;
+    a:active, a:hover {
+        outline: 0px;
     }
 
-    figure {
-        margin: 1.25em 0;
-        page-break-inside: avoid;
+    .in-text-selection, ::selection {
+        text-shadow: none;
+        background: var(--select-text-bg-color);
+        color: var(--select-text-font-color);
     }
 
-    figcaption {
-        opacity: 0.5;
-        font-size: 85%;
-        margin-top: 0.5em;
+    #write {
+        margin: 0px auto;
+        height: auto;
+        width: inherit;
+        word-break: normal;
+        word-wrap: break-word;
+        position: relative;
+        white-space: normal;
+        overflow-x: visible;
+        padding-top: 36px;
     }
 
-    mark {
-        background-color: transparent;
+    #write.first-line-indent p {
+        text-indent: 2em;
     }
 
-    .indented {
-        padding-left: 1.5em;
+    #write.first-line-indent li p, #write.first-line-indent p * {
+        text-indent: 0px;
     }
 
-    hr {
-        background: transparent;
-        display: block;
-        width: 100%;
-        height: 1px;
-        visibility: visible;
-        border: none;
-        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    #write.first-line-indent li {
+        margin-left: 2em;
+    }
+
+    .for-image #write {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    body.typora-export {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .typora-export .footnote-line, .typora-export li, .typora-export p {
+        white-space: pre-wrap;
+    }
+
+    .typora-export .task-list-item input {
+        pointer-events: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        body.typora-export {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        #write {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .CodeMirror-sizer {
+            margin-left: 0px !important;
+        }
+
+        .CodeMirror-gutters {
+            display: none !important;
+        }
+    }
+
+    #write li > figure:last-child {
+        margin-bottom: 0.5rem;
+    }
+
+    #write ol, #write ul {
+        position: relative;
     }
 
     img {
         max-width: 100%;
-    }
-
-    @media only print {
-        img {
-            max-height: 100vh;
-            object-fit: contain;
-        }
-    }
-
-    @page {
-        margin: 1in;
-    }
-
-    .collection-content {
-        font-size: 0.875rem;
-    }
-
-    .column-list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .column {
-        padding: 0 1em;
-    }
-
-    .column:first-child {
-        padding-left: 0;
-    }
-
-    .column:last-child {
-        padding-right: 0;
-    }
-
-    .table_of_contents-item {
-        display: block;
-        font-size: 0.875rem;
-        line-height: 1.3;
-        padding: 0.125rem;
-    }
-
-    .table_of_contents-indent-1 {
-        margin-left: 1.5rem;
-    }
-
-    .table_of_contents-indent-2 {
-        margin-left: 3rem;
-    }
-
-    .table_of_contents-indent-3 {
-        margin-left: 4.5rem;
-    }
-
-    .table_of_contents-link {
-        text-decoration: none;
-        opacity: 0.7;
-        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid rgba(55, 53, 47, 0.09);
-        border-collapse: collapse;
-    }
-
-    table {
-        border-left: none;
-        border-right: none;
-    }
-
-    th,
-    td {
-        font-weight: normal;
-        padding: 0.25em 0.5em;
-        line-height: 1.5;
-        min-height: 1.5em;
-        text-align: left;
-    }
-
-    th {
-        color: rgba(55, 53, 47, 0.6);
-    }
-
-    ol,
-    ul {
-        margin: 0;
-        margin-block-start: 0.6em;
-        margin-block-end: 0.6em;
-    }
-
-    li > ol:first-child,
-    li > ul:first-child {
-        margin-block-start: 0.6em;
-    }
-
-    ul > li {
-        list-style: disc;
-    }
-
-    ul.to-do-list {
-        text-indent: -1.7em;
-    }
-
-    ul.to-do-list > li {
-        list-style: none;
-    }
-
-    .to-do-children-checked {
-        text-decoration: line-through;
-        opacity: 0.375;
-    }
-
-    ul.toggle > li {
-        list-style: none;
-    }
-
-    ul {
-        padding-inline-start: 1.7em;
-    }
-
-    ul > li {
-        padding-left: 0.1em;
-    }
-
-    ol {
-        padding-inline-start: 1.6em;
-    }
-
-    ol > li {
-        padding-left: 0.2em;
-    }
-
-    .mono ol {
-        padding-inline-start: 2em;
-    }
-
-    .mono ol > li {
-        text-indent: -0.4em;
-    }
-
-    .toggle {
-        padding-inline-start: 0em;
-        list-style-type: none;
-    }
-
-    /* Indent toggle children */
-    .toggle > li > details {
-        padding-left: 1.7em;
-    }
-
-    .toggle > li > details > summary {
-        margin-left: -1.1em;
-    }
-
-    .selected-value {
-        display: inline-block;
-        padding: 0 0.5em;
-        background: rgba(206, 205, 202, 0.5);
-        border-radius: 3px;
-        margin-right: 0.5em;
-        margin-top: 0.3em;
-        margin-bottom: 0.3em;
-        white-space: nowrap;
-    }
-
-    .collection-title {
-        display: inline-block;
-        margin-right: 1em;
-    }
-
-    time {
-        opacity: 0.5;
-    }
-
-    .icon {
-        display: inline-block;
-        max-width: 1.2em;
-        max-height: 1.2em;
-        text-decoration: none;
-        vertical-align: text-bottom;
-        margin-right: 0.5em;
-    }
-
-    img.icon {
-        border-radius: 3px;
-    }
-
-    .user-icon {
-        width: 1.5em;
-        height: 1.5em;
-        border-radius: 100%;
-        margin-right: 0.5rem;
-    }
-
-    .user-icon-inner {
-        font-size: 0.8em;
-    }
-
-    .text-icon {
-        border: 1px solid #000;
-        text-align: center;
-    }
-
-    .page-cover-image {
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        height: 30vh;
-    }
-
-    .page-header-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    .page-header-icon-with-cover {
-        margin-top: -0.72em;
-        margin-left: 0.07em;
-    }
-
-    .page-header-icon img {
-        border-radius: 3px;
-    }
-
-    .link-to-page {
-        margin: 1em 0;
-        padding: 0;
-        border: none;
-        font-weight: 500;
-    }
-
-    p > .user {
-        opacity: 0.5;
-    }
-
-    td > .user,
-    td > time {
-        white-space: nowrap;
-    }
-
-    input[type="checkbox"] {
-        transform: scale(1.5);
-        margin-right: 0.6em;
         vertical-align: middle;
+        image-orientation: from-image;
+    }
+
+    button, input, select, textarea {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-variant-caps: inherit;
+        font-weight: inherit;
+        font-stretch: inherit;
+        line-height: inherit;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        line-height: normal;
+        padding: 0px;
+    }
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+        width: inherit;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p {
+        position: relative;
     }
 
     p {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        line-height: inherit;
     }
 
-    .image {
-        border: none;
-        margin: 1.5em 0;
-        padding: 0;
-        border-radius: 0;
-        text-align: center;
+    h1, h2, h3, h4, h5, h6 {
+        break-after: avoid-page;
+        break-inside: avoid;
+        orphans: 4;
     }
 
-    .code,
-    code {
-        background: rgba(135, 131, 120, 0.15);
-        border-radius: 3px;
-        padding: 0.2em 0.4em;
-        border-radius: 3px;
-        font-size: 85%;
-        tab-size: 2;
+    p {
+        orphans: 4;
     }
 
-    code {
-        color: #eb5757;
+    h1 {
+        font-size: 2rem;
     }
 
-    .code {
-        padding: 1.5em 1em;
+    h2 {
+        font-size: 1.8rem;
     }
 
-    .code-wrap {
-        white-space: pre-wrap;
-        word-break: break-all;
+    h3 {
+        font-size: 1.6rem;
     }
 
-    .code > code {
-        background: none;
-        padding: 0;
-        font-size: 100%;
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    .md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .md-blockmeta {
+        color: rgb(204, 204, 204);
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    sup.md-footnote {
+        padding: 2px 4px;
+        background-color: rgba(238, 238, 238, 0.7);
+        color: rgb(85, 85, 85);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        cursor: pointer;
+    }
+
+    sup.md-footnote a, sup.md-footnote a:hover {
         color: inherit;
+        text-transform: inherit;
+        text-decoration: inherit;
+    }
+
+    #write input[type="checkbox"] {
+        cursor: pointer;
+        width: inherit;
+        height: inherit;
+    }
+
+    figure {
+        overflow-x: auto;
+        margin: 1.2em 0px;
+        max-width: calc(100% + 16px);
+        padding: 0px;
+    }
+
+    figure > table {
+        margin: 0px;
+    }
+
+    tr {
+        break-inside: avoid;
+        break-after: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        width: 100%;
+        overflow: auto;
+        break-inside: auto;
+        text-align: left;
+    }
+
+    table.md-table td {
+        min-width: 32px;
+    }
+
+    .CodeMirror-gutters {
+        border-right-width: 0px;
+        background-color: inherit;
+    }
+
+    .CodeMirror-linenumber {
+    }
+
+    .CodeMirror {
+        text-align: left;
+    }
+
+    .CodeMirror-placeholder {
+        opacity: 0.3;
+    }
+
+    .CodeMirror pre {
+        padding: 0px 4px;
+    }
+
+    .CodeMirror-lines {
+        padding: 0px;
+    }
+
+    div.hr:focus {
+        cursor: none;
+    }
+
+    #write pre {
+        white-space: pre-wrap;
+    }
+
+    #write.fences-no-line-wrapping pre {
+        white-space: pre;
+    }
+
+    #write pre.ty-contain-cm {
+        white-space: normal;
+    }
+
+    .CodeMirror-gutters {
+        margin-right: 4px;
+    }
+
+    .md-fences {
+        font-size: 0.9rem;
+        display: block;
+        break-inside: avoid;
+        text-align: left;
+        overflow: visible;
+        white-space: pre;
+        background-image: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-origin: inherit;
+        background-clip: inherit;
+        background-color: inherit;
+        position: relative !important;
+        background-position: inherit inherit;
+        background-repeat: inherit inherit;
+    }
+
+    .md-diagram-panel {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+    }
+
+    #write .md-fences.mock-cm {
+        white-space: pre-wrap;
+    }
+
+    .md-fences.md-fences-with-lineno {
+        padding-left: 0px;
+    }
+
+    #write.fences-no-line-wrapping .md-fences.mock-cm {
+        white-space: pre;
+        overflow-x: auto;
+    }
+
+    .md-fences.mock-cm.md-fences-with-lineno {
+        padding-left: 8px;
+    }
+
+    .CodeMirror-line, twitterwidget {
+        break-inside: avoid;
+    }
+
+    .footnotes {
+        opacity: 0.8;
+        font-size: 0.9rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .footnotes + .footnotes {
+        margin-top: 0px;
+    }
+
+    .md-reset {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        outline: 0px;
+        vertical-align: top;
+        text-decoration: none;
+        text-shadow: none;
+        float: none;
+        position: static;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        cursor: inherit;
+        line-height: normal;
+        font-weight: 400;
+        text-align: left;
+        box-sizing: content-box;
+        direction: ltr;
+        background-position: 0px 0px;
+        background-repeat: initial initial;
+    }
+
+    li div {
+        padding-top: 0px;
     }
 
     blockquote {
-        font-size: 1.25em;
-        margin: 1em 0;
-        padding-left: 1em;
-        border-left: 3px solid rgb(55, 53, 47);
+        margin: 1rem 0px;
     }
 
-    .bookmark {
-        text-decoration: none;
-        max-height: 8em;
-        padding: 0;
-        display: flex;
-        width: 100%;
-        align-items: stretch;
+    li .mathjax-block, li p {
+        margin: 0.5rem 0px;
     }
 
-    .bookmark-title {
-        font-size: 0.85em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 1.75em;
-        white-space: nowrap;
+    li blockquote {
+        margin: 1rem 0px;
     }
 
-    .bookmark-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bookmark-info {
-        flex: 4 1 180px;
-        padding: 12px 14px 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .bookmark-image {
-        width: 33%;
-        flex: 1 1 180px;
-        display: block;
+    li {
+        margin: 0px;
         position: relative;
-        object-fit: cover;
-        border-radius: 1px;
     }
 
-    .bookmark-description {
-        color: rgba(55, 53, 47, 0.6);
-        font-size: 0.75em;
-        overflow: hidden;
-        max-height: 4.5em;
-        word-break: break-word;
+    blockquote > :last-child {
+        margin-bottom: 0px;
     }
 
-    .bookmark-href {
-        font-size: 0.75em;
-        margin-top: 0.25em;
+    blockquote > :first-child, li > :first-child {
+        margin-top: 0px;
     }
 
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-    .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
-    .serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
-    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-    .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    .footnotes-area {
+        color: rgb(136, 136, 136);
+        margin-top: 0.714rem;
+        padding-bottom: 0.143rem;
+        white-space: normal;
+    }
 
-    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+    #write .footnote-line {
+        white-space: pre-wrap;
+    }
 
-    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    @media print {
+        body, html {
+            border: 1px solid transparent;
+            height: 99%;
+            break-after: avoid;
+            break-before: avoid;
+            font-variant-ligatures: no-common-ligatures;
+        }
 
-    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+        #write {
+            margin-top: 0px;
+            padding-top: 0px;
+            border-color: transparent !important;
+        }
 
-    .highlight-default {
+        .typora-export * {
+            -webkit-print-color-adjust: exact;
+        }
+
+        .typora-export #write {
+            break-after: avoid;
+        }
+
+        .typora-export #write::after {
+            height: 0px;
+        }
+
+        .is-mac table {
+            break-inside: avoid;
+        }
     }
-    .highlight-gray {
-        color: rgb(155,154,151);
+
+    .footnote-line {
+        margin-top: 0.714em;
+        font-size: 0.7em;
     }
-    .highlight-brown {
-        color: rgb(100,71,58);
+
+    a img, img a {
+        cursor: pointer;
     }
-    .highlight-orange {
-        color: rgb(217,115,13);
+
+    pre.md-meta-block {
+        font-size: 0.8rem;
+        min-height: 0.8rem;
+        white-space: pre-wrap;
+        background-color: rgb(204, 204, 204);
+        display: block;
+        overflow-x: hidden;
+        background-position: initial initial;
+        background-repeat: initial initial;
     }
-    .highlight-yellow {
-        color: rgb(223,171,1);
+
+    p > .md-image:only-child:not(.md-img-error) img, p > img:only-child {
+        display: block;
+        margin: auto;
     }
-    .highlight-teal {
-        color: rgb(15,123,108);
+
+    #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img {
+        left: -2em;
+        position: relative;
     }
-    .highlight-blue {
-        color: rgb(11,110,153);
+
+    p > .md-image:only-child {
+        display: inline-block;
+        width: 100%;
     }
-    .highlight-purple {
-        color: rgb(105,64,165);
+
+    #write .MathJax_Display {
+        margin: 0.8em 0px 0px;
     }
-    .highlight-pink {
-        color: rgb(173,26,114);
+
+    .md-math-block {
+        width: 100%;
     }
-    .highlight-red {
-        color: rgb(224,62,62);
+
+    .md-math-block:not(:empty)::after {
+        display: none;
     }
-    .highlight-gray_background {
-        background: rgb(235,236,237);
+
+    .MathJax_ref {
+        fill: currentcolor;
     }
-    .highlight-brown_background {
-        background: rgb(233,229,227);
+
+    [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus {
+        outline: 0px;
+        box-shadow: none;
     }
-    .highlight-orange_background {
-        background: rgb(250,235,221);
+
+    .md-task-list-item {
+        position: relative;
+        list-style-type: none;
     }
-    .highlight-yellow_background {
-        background: rgb(251,243,219);
+
+    .task-list-item.md-task-list-item {
+        padding-left: 0px;
     }
-    .highlight-teal_background {
-        background: rgb(221,237,234);
+
+    .md-task-list-item > input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-left: -1.2em;
+        margin-top: calc(1em - 10px);
+        border: none;
     }
-    .highlight-blue_background {
-        background: rgb(221,235,241);
+
+    .math {
+        font-size: 1rem;
     }
-    .highlight-purple_background {
-        background: rgb(234,228,242);
+
+    .md-toc {
+        min-height: 3.58rem;
+        position: relative;
+        font-size: 0.9rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
-    .highlight-pink_background {
-        background: rgb(244,223,235);
+
+    .md-toc-content {
+        position: relative;
+        margin-left: 0px;
     }
-    .highlight-red_background {
-        background: rgb(251,228,228);
+
+    .md-toc-content::after, .md-toc::after {
+        display: none;
     }
-    .block-color-default {
+
+    .md-toc-item {
+        display: block;
+        color: rgb(65, 131, 196);
+    }
+
+    .md-toc-item a {
+        text-decoration: none;
+    }
+
+    .md-toc-inner:hover {
+        text-decoration: underline;
+    }
+
+    .md-toc-inner {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .md-toc-h1 .md-toc-inner {
+        margin-left: 0px;
+        font-weight: 700;
+    }
+
+    .md-toc-h2 .md-toc-inner {
+        margin-left: 2em;
+    }
+
+    .md-toc-h3 .md-toc-inner {
+        margin-left: 4em;
+    }
+
+    .md-toc-h4 .md-toc-inner {
+        margin-left: 6em;
+    }
+
+    .md-toc-h5 .md-toc-inner {
+        margin-left: 8em;
+    }
+
+    .md-toc-h6 .md-toc-inner {
+        margin-left: 10em;
+    }
+
+    @media screen and (max-width: 48em) {
+        .md-toc-h3 .md-toc-inner {
+            margin-left: 3.5em;
+        }
+
+        .md-toc-h4 .md-toc-inner {
+            margin-left: 5em;
+        }
+
+        .md-toc-h5 .md-toc-inner {
+            margin-left: 6.5em;
+        }
+
+        .md-toc-h6 .md-toc-inner {
+            margin-left: 8em;
+        }
+    }
+
+    a.md-toc-inner {
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .footnote-line a:not(.reversefootnote) {
         color: inherit;
-        fill: inherit;
-    }
-    .block-color-gray {
-        color: rgba(55, 53, 47, 0.6);
-        fill: rgba(55, 53, 47, 0.6);
-    }
-    .block-color-brown {
-        color: rgb(100,71,58);
-        fill: rgb(100,71,58);
-    }
-    .block-color-orange {
-        color: rgb(217,115,13);
-        fill: rgb(217,115,13);
-    }
-    .block-color-yellow {
-        color: rgb(223,171,1);
-        fill: rgb(223,171,1);
-    }
-    .block-color-teal {
-        color: rgb(15,123,108);
-        fill: rgb(15,123,108);
-    }
-    .block-color-blue {
-        color: rgb(11,110,153);
-        fill: rgb(11,110,153);
-    }
-    .block-color-purple {
-        color: rgb(105,64,165);
-        fill: rgb(105,64,165);
-    }
-    .block-color-pink {
-        color: rgb(173,26,114);
-        fill: rgb(173,26,114);
-    }
-    .block-color-red {
-        color: rgb(224,62,62);
-        fill: rgb(224,62,62);
-    }
-    .block-color-gray_background {
-        background: rgb(235,236,237);
-    }
-    .block-color-brown_background {
-        background: rgb(233,229,227);
-    }
-    .block-color-orange_background {
-        background: rgb(250,235,221);
-    }
-    .block-color-yellow_background {
-        background: rgb(251,243,219);
-    }
-    .block-color-teal_background {
-        background: rgb(221,237,234);
-    }
-    .block-color-blue_background {
-        background: rgb(221,235,241);
-    }
-    .block-color-purple_background {
-        background: rgb(234,228,242);
-    }
-    .block-color-pink_background {
-        background: rgb(244,223,235);
-    }
-    .block-color-red_background {
-        background: rgb(251,228,228);
-    }
-    .select-value-color-default { background-color: rgba(206,205,202,0.5); }
-    .select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
-    .select-value-color-brown { background-color: rgba(140,46,0,0.2); }
-    .select-value-color-orange { background-color: rgba(245,93,0,0.2); }
-    .select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
-    .select-value-color-green { background-color: rgba(0,135,107,0.2); }
-    .select-value-color-blue { background-color: rgba(0,120,223,0.2); }
-    .select-value-color-purple { background-color: rgba(103,36,222,0.2); }
-    .select-value-color-pink { background-color: rgba(221,0,129,0.2); }
-    .select-value-color-red { background-color: rgba(255,0,26,0.2); }
-
-    .checkbox {
-        display: inline-flex;
-        vertical-align: text-bottom;
-        width: 16;
-        height: 16;
-        background-size: 16px;
-        margin-left: 2px;
-        margin-right: 5px;
     }
 
-    .checkbox-on {
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    .md-attr {
+        display: none;
     }
 
-    .checkbox-off {
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    .md-fn-count::after {
+        content: ".";
     }
 
-</style></head><body><article id="754dd36e-3d6b-4fbb-833a-33420bfc75e0" class="page sans"><header><h1 class="page-title">404</h1></header><div class="page-body"><p id="ec043fae-1761-47db-bb54-a9d4752c3ac5" class="">感谢使用Gate_Passer。</p><p id="310a5e5b-7248-4671-a02e-f8c4643d8c2c" class="">目前，学校已恢复日常校门管控措施，当日出校返校无需请销假只需扫码即可正常通行。</p><p id="78a74326-c9c2-47eb-833a-7542bb942e84" class="">因此，该项目的GitHub Pages部署现已停用。</p><p id="b32089a2-583c-467e-90e3-39b38f3ebcb9" class="">若您觉得该项目对您有帮助，欢迎 Star / Fork <a href="https://github.com/KevenLi8888/Gate_Passer">本仓库</a>，以备不时之需。</p><p id="6f1800e4-091d-4475-803f-6bbd9f65d0f0" class="">另，请保持良好个人卫生习惯，坚持勤洗手、戴口罩、保持社交距离。同心抗疫，我们在一起。</p><p id="b1d89cd8-55e6-4a15-974f-0da3fa6964c9" class="">
-</p><figure id="3ec28b50-cf2c-4ef1-bfbf-2e942c608188" class="image"><a href="files/notice.png"><img style="width:3092px" src="files/notice.png"/></a></figure><p id="f94e0249-a4e6-4e2b-b7f0-578792ed98b9" class="">
-</p></div></article></body></html>
+    code, pre, samp, tt {
+        font-family: var(--monospace);
+    }
+
+    kbd {
+        margin: 0px 0.1em;
+        padding: 0.1em 0.6em;
+        font-size: 0.8em;
+        color: rgb(36, 39, 41);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(173, 179, 185);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-position: initial initial;
+        background-repeat: initial initial;
+    }
+
+    .md-comment {
+        color: rgb(162, 127, 3);
+        opacity: 0.8;
+        font-family: var(--monospace);
+    }
+
+    code {
+        text-align: left;
+    }
+
+    a.md-print-anchor {
+        white-space: pre !important;
+        border: none !important;
+        display: inline-block !important;
+        position: absolute !important;
+        width: 1px !important;
+        right: 0px !important;
+        outline: 0px !important;
+        text-shadow: initial !important;
+        background-position: 0px 0px !important;
+        background-repeat: initial initial !important;
+    }
+
+    .md-inline-math .MathJax_SVG .noError {
+        display: none !important;
+    }
+
+    .html-for-mac .inline-math-svg .MathJax_SVG {
+        vertical-align: 0.2px;
+    }
+
+    .md-math-block .MathJax_SVG_Display {
+        text-align: center;
+        margin: 0px;
+        position: relative;
+        text-indent: 0px;
+        max-width: none;
+        max-height: none;
+        min-height: 0px;
+        min-width: 100%;
+        width: auto;
+        overflow-y: hidden;
+        display: block !important;
+    }
+
+    .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display {
+        width: auto;
+        margin: inherit;
+        display: inline-block !important;
+    }
+
+    .MathJax_SVG .MJX-monospace {
+        font-family: var(--monospace);
+    }
+
+    .MathJax_SVG .MJX-sans-serif {
+        font-family: sans-serif;
+    }
+
+    .MathJax_SVG {
+        display: inline;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        zoom: 90%;
+        text-indent: 0px;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        direction: ltr;
+        max-width: none;
+        max-height: none;
+        min-width: 0px;
+        min-height: 0px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .MathJax_SVG * {
+        transition: none;
+    }
+
+    .MathJax_SVG_Display svg {
+        vertical-align: middle !important;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .os-windows.monocolor-emoji .md-emoji {
+        font-family: "Segoe UI Symbol", sans-serif;
+    }
+
+    .md-diagram-panel > svg {
+        max-width: 100%;
+    }
+
+    [lang="flow"] svg, [lang="mermaid"] svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    [lang="mermaid"] .node text {
+        font-size: 1rem;
+    }
+
+    table tr th {
+        border-bottom-width: 0px;
+    }
+
+    video {
+        max-width: 100%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    iframe {
+        max-width: 100%;
+        width: 100%;
+        border: none;
+    }
+
+    .highlight td, .highlight tr {
+        border: 0px;
+    }
+
+    mark {
+        background-color: rgb(255, 255, 0);
+        color: rgb(0, 0, 0);
+        background-position: initial initial;
+        background-repeat: initial initial;
+    }
+
+    .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong {
+        color: inherit;
+    }
+
+    mark .md-meta {
+        color: rgb(0, 0, 0);
+        opacity: 0.3 !important;
+    }
+
+    @media print {
+        .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 {
+            break-inside: avoid;
+        }
+    }
+
+    .md-diagram-panel .messageText {
+        stroke: none !important;
+    }
+
+    .md-diagram-panel .start-state {
+        fill: var(--node-fill);
+    }
+
+    .md-diagram-panel .edgeLabel rect {
+        opacity: 1 !important;
+    }
+
+    .md-require-zoom-fix foreignObject {
+        font-size: var(--mermaid-font-zoom);
+    }
+
+
+    :root {
+        --side-bar-bg-color: #fafafa;
+        --control-text-color: #777;
+    }
+
+    @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+    /* open-sans-regular - latin-ext_latin */
+    /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.6;
+    }
+
+    #write {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 30px;
+        padding-bottom: 100px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        #write {
+            max-width: 1024px;
+        }
+    }
+
+    @media only screen and (min-width: 1800px) {
+        #write {
+            max-width: 1200px;
+        }
+    }
+
+    #write > ul:first-child,
+    #write > ol:first-child {
+        margin-top: 30px;
+    }
+
+    a {
+        color: #4183C4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        line-height: 1.4;
+        cursor: text;
+    }
+
+    h1:hover a.anchor,
+    h2:hover a.anchor,
+    h3:hover a.anchor,
+    h4:hover a.anchor,
+    h5:hover a.anchor,
+    h6:hover a.anchor {
+        text-decoration: none;
+    }
+
+    h1 tt,
+    h1 code {
+        font-size: inherit;
+    }
+
+    h2 tt,
+    h2 code {
+        font-size: inherit;
+    }
+
+    h3 tt,
+    h3 code {
+        font-size: inherit;
+    }
+
+    h4 tt,
+    h4 code {
+        font-size: inherit;
+    }
+
+    h5 tt,
+    h5 code {
+        font-size: inherit;
+    }
+
+    h6 tt,
+    h6 code {
+        font-size: inherit;
+    }
+
+    h1 {
+        font-size: 2.25em;
+        line-height: 1.2;
+        border-bottom: 1px solid #eee;
+    }
+
+    h2 {
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid #eee;
+    }
+
+    /*@media print {
+        .typora-export h1,
+        .typora-export h2 {
+            border-bottom: none;
+            padding-bottom: initial;
+        }
+
+        .typora-export h1::after,
+        .typora-export h2::after {
+            content: "";
+            display: block;
+            height: 100px;
+            margin-top: -96px;
+            border-top: 1px solid #eee;
+        }
+    }*/
+
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.43;
+    }
+
+    h4 {
+        font-size: 1.25em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 1em;
+        color: #777;
+    }
+
+    p,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    table {
+        margin: 0.8em 0;
+    }
+
+    li > ol,
+    li > ul {
+        margin: 0 0;
+    }
+
+    hr {
+        height: 2px;
+        padding: 0;
+        margin: 16px 0;
+        background-color: #e7e7e7;
+        border: 0 none;
+        overflow: hidden;
+        box-sizing: content-box;
+    }
+
+    li p.first {
+        display: inline-block;
+    }
+
+    ul,
+    ol {
+        padding-left: 30px;
+    }
+
+    ul:first-child,
+    ol:first-child {
+        margin-top: 0;
+    }
+
+    ul:last-child,
+    ol:last-child {
+        margin-bottom: 0;
+    }
+
+    blockquote {
+        border-left: 4px solid #dfe2e5;
+        padding: 0 15px;
+        color: #777777;
+    }
+
+    blockquote blockquote {
+        padding-right: 0;
+    }
+
+    table {
+        padding: 0;
+        word-break: initial;
+    }
+
+    table tr {
+        border-top: 1px solid #dfe2e5;
+        margin: 0;
+        padding: 0;
+    }
+
+    table tr:nth-child(2n),
+    thead {
+        background-color: #f8f8f8;
+    }
+
+    table th {
+        font-weight: bold;
+        border: 1px solid #dfe2e5;
+        border-bottom: 0;
+        margin: 0;
+        padding: 6px 13px;
+    }
+
+    table td {
+        border: 1px solid #dfe2e5;
+        margin: 0;
+        padding: 6px 13px;
+    }
+
+    table th:first-child,
+    table td:first-child {
+        margin-top: 0;
+    }
+
+    table th:last-child,
+    table td:last-child {
+        margin-bottom: 0;
+    }
+
+    .CodeMirror-lines {
+        padding-left: 4px;
+    }
+
+    .code-tooltip {
+        box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+        border-top: 1px solid #eef2f2;
+    }
+
+    .md-fences,
+    code,
+    tt {
+        border: 1px solid #e7eaed;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        padding: 0;
+        padding: 2px 4px 0px 4px;
+        font-size: 0.9em;
+    }
+
+    code {
+        background-color: #f3f4f4;
+        padding: 0 2px 0 2px;
+    }
+
+    .md-fences {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-top: 8px;
+        padding-bottom: 6px;
+    }
+
+
+    .md-task-list-item > input {
+        margin-left: -1.3em;
+    }
+
+    @media print {
+        html {
+            font-size: 13px;
+        }
+
+        table,
+        pre {
+            page-break-inside: avoid;
+        }
+
+        pre {
+            word-wrap: break-word;
+        }
+    }
+
+    .md-fences {
+        background-color: #f8f8f8;
+    }
+
+    #write pre.md-meta-block {
+        padding: 1rem;
+        font-size: 85%;
+        line-height: 1.45;
+        background-color: #f7f7f7;
+        border: 0;
+        border-radius: 3px;
+        color: #777777;
+        margin-top: 0 !important;
+    }
+
+    .mathjax-block > .code-tooltip {
+        bottom: .375rem;
+    }
+
+    .md-mathjax-midline {
+        background: #fafafa;
+    }
+
+    #write > h3.md-focus:before {
+        left: -1.5625rem;
+        top: .375rem;
+    }
+
+    #write > h4.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    #write > h5.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    #write > h6.md-focus:before {
+        left: -1.5625rem;
+        top: .285714286rem;
+    }
+
+    .md-image > .md-meta {
+        /*border: 1px solid #ddd;*/
+        border-radius: 3px;
+        padding: 2px 0px 0px 4px;
+        font-size: 0.9em;
+        color: inherit;
+    }
+
+    .md-tag {
+        color: #a7a7a7;
+        opacity: 1;
+    }
+
+    .md-toc {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sidebar-tabs {
+        border-bottom: none;
+    }
+
+    #typora-quick-open {
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+    }
+
+    #typora-quick-open-item {
+        background-color: #FAFAFA;
+        border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    /** focus mode */
+    .on-focus-mode blockquote {
+        border-left-color: rgba(85, 85, 85, 0.12);
+    }
+
+    header, .context-menu, .megamenu-content, footer {
+        font-family: "Segoe UI", "Arial", sans-serif;
+    }
+
+    .file-node-content:hover .file-node-icon,
+    .file-node-content:hover .file-node-open-state {
+        visibility: visible;
+    }
+
+    .mac-seamless-mode #typora-sidebar {
+        background-color: #fafafa;
+        background-color: var(--side-bar-bg-color);
+    }
+
+    .md-lang {
+        color: #b4654d;
+    }
+
+    .html-for-mac .context-menu {
+        --item-hover-bg-color: #E6F0FE;
+    }
+
+    #md-notification .btn {
+        border: 0;
+    }
+
+    .dropdown-menu .divider {
+        border-color: #e5e5e5;
+    }
+
+    .ty-preferences .window-content {
+        background-color: #fafafa;
+    }
+
+    .ty-preferences .nav-group-item.active {
+        color: white;
+        background: #999;
+    }
+
+    :root {
+        --mermaid-font-zoom: 1em;
+    }
+    </style>
+</head>
+<body class='typora-export'>
+<div id='write' class=''><h1><a name="项目部署已停用" class="md-header-anchor"></a><span>项目部署已停用</span></h1>
+    <p><span>感谢使用Gate_Passer。</span></p>
+    <p><span>目前，学校已恢复日常校门管控措施，当日出校返校无需请销假只需扫码即可正常通行。</span></p>
+    <p><span>因此，该项目的GitHub Pages部署现已停用。</span></p>
+    <p><span>若您觉得该项目对您有帮助，欢迎 Star / Fork </span><a
+            href='https://github.com/KevenLi8888/Gate_Passer'><span>本仓库</span></a><span>，以备不时之需。</span></p>
+    <p><span>另，请保持良好个人卫生习惯，坚持勤洗手、戴口罩、保持社交距离。同心抗疫，我们在一起。</span></p>
+    <p><img src="files/notice.png" referrerpolicy="no-referrer" alt="notice"></p>
+    <p>&nbsp;</p></div>
+</body>
+</html>
