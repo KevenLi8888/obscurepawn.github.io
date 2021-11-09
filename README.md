@@ -5,4 +5,4 @@
 
 ## 注：该项目的GitHub Pages部署现已停用。
 
-参见 https://kevenli8888.github.io/Gate_Passer/404.html 获取更多信息
+参见 https://gate-passer.vercel.app 获取更多信息
